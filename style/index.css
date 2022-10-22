@@ -17,7 +17,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding:0;
 	border:0;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,44 +46,83 @@ table {
 	border-spacing: 0;
 }
 .Trent{
-    background-color: white;
+    background-color: black;
     display:flex;
     flex-direction:column;
     justify-content: center;
     text-align: center;
+    color:white;
+    text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
 }
 
 .Introducing{
+    background-color: black;
     display:flex;
     flex-wrap:wrap;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    padding:20px;
+    color:white;
+    text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
 }
 
 .BigPicture {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit:scale-down;
+   display:flex;
+   margin: 0 auto;
+   transform: scale(.5);
+   align-items: left;
+   justify-content: left;
+   text-align: left;
 }
 .footer {
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:25px;
+    color:white;
+    text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
 }
 .images {
     display:flex;
     justify-content:left;
     align-items:left;
     text-align:left;
-    object-fit: scale-down;
-    border: 5px;
+    object-fit: cover;
+    
 }
 .projectsinfo{
+    background-color: black;
+    width: 256px;
+    text-align:center;
+    padding:20px;
+    color:white;
+    text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+}
+.projects{
     display:flex;
-    flex-wrap:nowrap;
-    justify-content:right;
-    align-items:right;
-    text-align: right;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+button{
+    background-color: white;
+    color:black;
+    border: black solid 1px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+    border: solid white 1px;
+}
+
+button a{ 
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    font-size: 100px;
 }
