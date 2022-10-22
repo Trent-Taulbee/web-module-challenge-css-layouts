@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border:1px solid black;
+	border:0;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -48,7 +48,7 @@ table {
 .Trent{
     background-color: white;
     display:flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     justify-content: center;
     text-align: center;
 }
@@ -56,6 +56,34 @@ table {
 .Introducing{
     display:flex;
     flex-wrap:wrap;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+}
+
+.BigPicture {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit:scale-down;
+}
+.footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.images {
+    display:flex;
+    justify-content:left;
+    align-items:left;
+    text-align:left;
+    object-fit: scale-down;
+    border: 5px;
+}
+.projectsinfo{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:right;
+    align-items:right;
+    text-align: right;
 }
