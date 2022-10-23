@@ -45,6 +45,39 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border: 1px solid red;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: black;
+}
+h1, h2{
+    margin: 2%,0;
+}
+h1{
+    font-size:8rem;
+}
+h2{
+    font-size:3.5rem;
+}
+.bg-img{
+    background-image: url('https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg?fm=webp&q=72');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+}
+
+
 .Trent{
     background-color: black;
     display:flex;
@@ -53,6 +86,8 @@ table {
     text-align: center;
     color:white;
     text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+    width:80%;
+    margin: 0 auto;
 }
 
 .Introducing{
@@ -70,10 +105,10 @@ table {
 .BigPicture {
    display:flex;
    margin: 0 auto;
-   transform: scale(.5);
-   align-items: left;
-   justify-content: left;
-   text-align: left;
+   width:100%;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 .footer {
     display:flex;
@@ -85,25 +120,29 @@ table {
 }
 .images {
     display:flex;
-    justify-content:left;
+    max-width:70%;
+    flex-direction: row;
     align-items:left;
     text-align:left;
-    object-fit: cover;
+    margin: 0 auto;
+    background-color: white;
     
 }
 .projectsinfo{
+    display:flex;
     background-color: black;
-    width: 256px;
-    text-align:center;
-    padding:20px;
+    text-align:right;
+    justify-content: right;
     color:white;
     text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+    max-width: 20%;
 }
 .projects{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
-    padding:20px;
+    align-items: center;
+     max-width: 100%;
 }
 
 button{
@@ -123,6 +162,46 @@ button a{
     text-decoration: none;
     color: inherit;
 }
-h1{
-    font-size: 100px;
+
+@media(max-width: 800px){
+    
+    .images{
+        width:20%;
+
+    }
+ 
+}
+
+@media(max-width: 500px){   
+    .images{
+    max-width: 100%;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    .projectsinfo{
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width:100%;
+    margin: 4% 0;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+}
+.links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links button{
+    width:40%;
+    margin:1% 0;
+}
+.projects{
+    flex-direction: column;
+    width:100%;
+
+}
 }
